@@ -12,17 +12,16 @@ public class PlayerBase : MonoBehaviour
     private float BaseHealth { get; set; } = 100;
 
     public int Coins { get; set; } = 0;
-
-    //Пассвиный зарботок
-    // private void Start()
-    // {
-    //     InvokeRepeating(nameof(PassiveIncome), 1, 1 );
-    // }
-    //
-    // public void PassiveIncome()
-    // {
-    //     Coins += 1;
-    // }
+    
+     private void Start()
+     {
+         InvokeRepeating(nameof(PassiveIncome), 1, 1 );
+     }
+    
+     public void PassiveIncome()
+     {
+         Coins += 1;
+     }
 
     public void AddCoins(int coinsToAdd)
     {

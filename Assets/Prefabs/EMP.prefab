@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1825026126194417403}
   - component: {fileID: 3064049563453754574}
   - component: {fileID: -3946781396148403962}
-  - component: {fileID: 2222934244063590930}
   m_Layer: 0
   m_Name: EMP
   m_TagString: Enemy
@@ -64,21 +63,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2222934244063590930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1303822033398809665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a098d0730ee935d41b97875d8d21b0a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mediumSpeed: 7
-  mediumAttackPower: 7
-  droneHeight: 10
 --- !u!1 &3137780202868275394
 GameObject:
   m_ObjectHideFlags: 0
