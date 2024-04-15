@@ -4,16 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - PlayerBase
   - Enemy
+  - PlayerBaze
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
+  - Interactable Objects
   - 
   - 
   - 
