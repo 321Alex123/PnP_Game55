@@ -106,8 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0666bb10914583439834a5229d6e607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rewardMoney: 5
-  refundMoney: 0
+  activeShield: 0
+  rewardMoney: 0
+  refundMoney: 2
   explosionObject: {fileID: 1356167441582277565, guid: c100dff8b3b913d42bae9ac975b6e7a9, type: 3}
   health: 100
   isBase: 0
@@ -124,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  drivingSpeed: 10
+  drivingSpeed: 15
   turningSpeed: 200
   isDrill: 0
   isAPC: 0
@@ -142,7 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: {fileID: 6531561581620961681}
-  damage: 250
+  damage: 1000
 --- !u!65 &-2474795803576824564
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -162,7 +163,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 142.72069, y: 97.03378, z: 191.81256}
+  m_Size: {x: 200, y: 100, z: 250}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &6105611851675229218
 Rigidbody:

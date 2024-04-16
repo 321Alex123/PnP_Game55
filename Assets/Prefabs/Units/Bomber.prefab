@@ -295,9 +295,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeShield: 0
   rewardMoney: 0
-  refundMoney: 5
+  refundMoney: 4
   explosionObject: {fileID: 1356167441582277565, guid: c100dff8b3b913d42bae9ac975b6e7a9, type: 3}
-  health: 500
+  health: 3000
   isBase: 0
 --- !u!114 &7263064126350553957
 MonoBehaviour:
@@ -337,14 +337,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7082858343094752126}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5fcf48eec191e844b2fa0d497dc49b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 706238751459c844f902d515516d42f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bombSpawnPoint: {fileID: 1245676796254127318}
   shellPrefab: {fileID: 5665960811183538697, guid: 3dd6a874ab3bd014ca8b26e9a74f3873, type: 3}
   dropBomb: {fileID: 719823455864393685, guid: 4408cce71d98df5469ccac734c0e6fd2, type: 3}
   ammo: 3
-  bombCooldown: 5
+  bombCooldown: 3
 --- !u!136 &6611678530056465715
 CapsuleCollider:
   m_ObjectHideFlags: 0

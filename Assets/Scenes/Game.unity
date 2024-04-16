@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17757809, g: 0.22232188, b: 0.304517, a: 1}
+  m_IndirectSpecularColor: {r: 0.17757834, g: 0.2223223, b: 0.30451798, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1544,7 +1544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerBaseWallet: {fileID: 500555070}
   kamikadzePrice: 5
-  APPrice: 10
+  APPrice: 5
   EMPPrice: 7
   droneSpawn: {fileID: 515939444}
   droneGathering: {fileID: 1307569098}
@@ -2653,8 +2653,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1496927655}
   m_HandleRect: {fileID: 1496927654}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.9999979
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4236,19 +4236,47 @@ MonoBehaviour:
   spawnB: {fileID: 2147371309}
   spawnC: {fileID: 377016393}
   enemyPrefabsA1:
-  - {fileID: 2695784404864859720, guid: 16810c9c1be5aa24e8f79a4cc04b9cff, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
   enemyPrefabsB1:
-  - {fileID: 2695784404864859720, guid: 16810c9c1be5aa24e8f79a4cc04b9cff, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
   enemyPrefabsC1:
-  - {fileID: 6826511408781426407, guid: 622decb6fc3324246ad43e1be07c9109, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
   enemyPrefabsA2:
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
   - {fileID: 2695784404864859720, guid: 16810c9c1be5aa24e8f79a4cc04b9cff, type: 3}
-  enemyPrefabsB2: []
-  enemyPrefabsC2: []
+  enemyPrefabsB2:
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 2695784404864859720, guid: 16810c9c1be5aa24e8f79a4cc04b9cff, type: 3}
+  enemyPrefabsC2:
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 2695784404864859720, guid: 16810c9c1be5aa24e8f79a4cc04b9cff, type: 3}
   enemyPrefabsA3:
-  - {fileID: 919132149155446097, guid: 6c5a22fbe08e11d43bdf93e5395d92d3, type: 3}
-  enemyPrefabsB3: []
-  enemyPrefabsC3: []
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 2695784404864859720, guid: 16810c9c1be5aa24e8f79a4cc04b9cff, type: 3}
+  - {fileID: 6826511408781426407, guid: 622decb6fc3324246ad43e1be07c9109, type: 3}
+  enemyPrefabsB3:
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 2695784404864859720, guid: 16810c9c1be5aa24e8f79a4cc04b9cff, type: 3}
+  - {fileID: 6826511408781426407, guid: 622decb6fc3324246ad43e1be07c9109, type: 3}
+  enemyPrefabsC3:
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 4781708207982363202, guid: 02fb4fabbbc1f154281c96f83443079d, type: 3}
+  - {fileID: 2695784404864859720, guid: 16810c9c1be5aa24e8f79a4cc04b9cff, type: 3}
+  - {fileID: 6826511408781426407, guid: 622decb6fc3324246ad43e1be07c9109, type: 3}
   enemyRouteA:
   - {fileID: 1750113941}
   - {fileID: 466308787}
@@ -6174,7 +6202,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.0007777026, y: -0.00001860105}
+  m_AnchoredPosition: {x: 0.0007777026, y: -0.000018103578}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1688649909

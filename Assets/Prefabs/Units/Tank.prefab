@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  drivingSpeed: 20
+  drivingSpeed: 7
   turningSpeed: 200
   isDrill: 1
   isAPC: 0
@@ -273,7 +273,7 @@ MonoBehaviour:
   playerBaze:
     serializedVersion: 2
     m_Bits: 128
-  damage: 50
+  damage: 500
   damagePeriod: 1
 --- !u!114 &-1871161163535095764
 MonoBehaviour:
@@ -289,9 +289,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeShield: 0
   rewardMoney: 0
-  refundMoney: 5
+  refundMoney: 8
   explosionObject: {fileID: 1356167441582277565, guid: c100dff8b3b913d42bae9ac975b6e7a9, type: 3}
-  health: 1000
+  health: 2000
   isBase: 0
 --- !u!82 &5891618905109234708
 AudioSource:

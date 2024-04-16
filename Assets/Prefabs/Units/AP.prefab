@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 6211136432373520719}
   blasterShot: {fileID: 8300000, guid: 1de2345dcc9d8634a965cdb01c5ed0f0, type: 3}
-  fireColldown: 0.1
+  fireColldown: 0.5
   projectile: {fileID: 704242626412601996, guid: 1669aba0a62bdf946aaef2b351f26552, type: 3}
   target: {fileID: 0}
   projectileSpawn: {fileID: 1357625958179594365}
@@ -746,10 +746,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0666bb10914583439834a5229d6e607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeShield: 0
   rewardMoney: 0
-  refundMoney: 5
+  refundMoney: 2
   explosionObject: {fileID: 1356167441582277565, guid: c100dff8b3b913d42bae9ac975b6e7a9, type: 3}
-  health: 500
+  health: 1500
   isBase: 0
 --- !u!114 &5717020991520257661
 MonoBehaviour:

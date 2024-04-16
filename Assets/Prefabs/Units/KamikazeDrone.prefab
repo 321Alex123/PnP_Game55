@@ -407,10 +407,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0666bb10914583439834a5229d6e607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeShield: 0
   rewardMoney: 0
-  refundMoney: 2
+  refundMoney: 0
   explosionObject: {fileID: 1356167441582277565, guid: c100dff8b3b913d42bae9ac975b6e7a9, type: 3}
-  health: 50
+  health: 100
   isBase: 0
 --- !u!114 &8382936380867407848
 MonoBehaviour:
@@ -455,7 +456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: {fileID: 6235462897488967184}
   speed: 30
-  damage: 250
+  damage: 1000
 --- !u!135 &69281995757578994
 SphereCollider:
   m_ObjectHideFlags: 0

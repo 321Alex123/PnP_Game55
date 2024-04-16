@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 29, z: 13}
-  m_LocalScale: {x: 400, y: 400, z: 400}
+  m_LocalScale: {x: 600, y: 600, z: 600}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3680464732042556696}
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 6355524519939537128}
   blasterShot: {fileID: 8300000, guid: 1de2345dcc9d8634a965cdb01c5ed0f0, type: 3}
-  fireColldown: 0.1
+  fireColldown: 0.5
   projectile: {fileID: 704242626412601996, guid: 1669aba0a62bdf946aaef2b351f26552, type: 3}
   target: {fileID: 0}
   projectileSpawn: {fileID: 5195216375588529364}
@@ -242,7 +242,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 3000
+  m_Radius: 2000
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &6355524519939537128
 AudioSource:
@@ -534,8 +534,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeShield: 1
-  rewardMoney: 1
-  refundMoney: 0
+  rewardMoney: 0
+  refundMoney: 10
   explosionObject: {fileID: 1356167441582277565, guid: c100dff8b3b913d42bae9ac975b6e7a9, type: 3}
   health: 1000
   isBase: 0
@@ -552,7 +552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  drivingSpeed: 5
+  drivingSpeed: 10
   turningSpeed: 200
   isDrill: 0
   isAPC: 1
