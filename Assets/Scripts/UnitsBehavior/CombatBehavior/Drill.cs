@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Drill : MonoBehaviour
 {
+    [SerializeField] AudioSource audioSource;
+
     [SerializeField] private int damage = 50;
     [SerializeField] private int damagePeriod = 1;
     private GameObject target;
@@ -21,6 +23,7 @@ public class Drill : MonoBehaviour
     {
         while (true)
         {
+            audioSource.Play();
             target.GetComponent<Health>().RecieveDamage(damage);
             yield return new WaitForSeconds(damagePeriod);
         }

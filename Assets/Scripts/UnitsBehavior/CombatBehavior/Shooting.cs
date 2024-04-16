@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip blasterShot;
+
     [SerializeField] private float fireColldown;
-    [SerializeField] private float fireDistance;
     [SerializeField] private GameObject projectile;
     public GameObject target;
     [SerializeField] private GameObject projectileSpawn;
@@ -25,16 +27,9 @@ public class Shooting : MonoBehaviour
                 if (transform.rotation == lookAtRotation)
                 {
                     SpawnProjectiles();
+                    audioSource.PlayOneShot(blasterShot, 1);
                     _fireTimer = 0;
                 }
-                /*
-                float angle = Quaternion.Angle(transform.rotation, Quaternion.LookRotation(target.transform.position - transform.position));
-
-                if (angle < fireDistance)
-                {
-                    SpawnProjectiles();
-                    _fireTimer = 0;
-                }*/
             }
         }
     }

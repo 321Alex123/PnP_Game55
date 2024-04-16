@@ -8,16 +8,4 @@ public class MainUIHandler : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
-
-    public void MainExit()
-    {
-        if (EditorApplication.isPlaying)
-        {
-            EditorApplication.ExitPlaymode();
-        }
-        else
-        {
-            Application.Quit();
-        }
-    }
 }

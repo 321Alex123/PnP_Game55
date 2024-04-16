@@ -18,7 +18,7 @@ public class SelectByClick : MonoBehaviour
     private void SelectObject(InputAction.CallbackContext context)
     {
         RaycastHit hit;
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100, clickableLayers))
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100, clickableLayers, QueryTriggerInteraction.Ignore))
         {
             if (hit.collider.gameObject.CompareTag("Player"))
             {

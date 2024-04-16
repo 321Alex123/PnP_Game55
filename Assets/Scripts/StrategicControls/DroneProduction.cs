@@ -24,25 +24,13 @@ public class DroneProduction : MonoBehaviour
 
     [SerializeField] private Button droneButtonPrefab;
 
-    [SerializeField] private GameObject productionPanel;
     [SerializeField] private GameObject selectionContent;
-    [SerializeField] private InputActionReference openPanel;
 
     private void Awake()
     {
-        openPanel.action.performed += OpenPanel;
-
         kamikazeProductionButton.onClick.AddListener(() => ProduceDrone(kamikazeDronePrefab));
         APProductionButton.onClick.AddListener(() => ProduceDrone(APDronePrefab));
         EMPProductionButton.onClick.AddListener(() => ProduceDrone(EMPDronePrefab));
-    }
-
-    private void OpenPanel(InputAction.CallbackContext context)
-    {
-        if (productionPanel.activeInHierarchy)
-            productionPanel.SetActive(false);
-        else
-            productionPanel.SetActive(true);
     }
 
     public void ProduceDrone(GameObject dronePrefab)

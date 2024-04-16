@@ -56,7 +56,6 @@ public class EnemySpawn : MonoBehaviour
         {
             if (currentWave.Count == 0 && !spawning)
             {
-                Debug.Log("1");
                 waveNumber++;
                 StartNextWave();
             }
