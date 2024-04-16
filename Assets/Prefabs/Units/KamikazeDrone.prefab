@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 4825686317377234437, guid: f8d9f8291641d764b90ba790d216c8ae, type: 3}
+  - {fileID: 2100000, guid: 766b7e0b3722cc14c8a768f3c91441d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -144,7 +144,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 4825686317377234437, guid: f8d9f8291641d764b90ba790d216c8ae, type: 3}
+  - {fileID: 2100000, guid: 766b7e0b3722cc14c8a768f3c91441d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -227,7 +227,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 4825686317377234437, guid: f8d9f8291641d764b90ba790d216c8ae, type: 3}
+  - {fileID: 2100000, guid: 766b7e0b3722cc14c8a768f3c91441d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 5908969959480976327}
   - component: {fileID: 2957383074770455697}
   - component: {fileID: 69281995757578994}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: KamikazeDrone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,9 +322,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -9134615158326118377, guid: f8d9f8291641d764b90ba790d216c8ae, type: 3}
-  - {fileID: -7873511020414354391, guid: f8d9f8291641d764b90ba790d216c8ae, type: 3}
-  - {fileID: 5428450082913979454, guid: f8d9f8291641d764b90ba790d216c8ae, type: 3}
+  - {fileID: 2100000, guid: a747eba94b6f94f478ce232757e9ed0c, type: 2}
+  - {fileID: 2100000, guid: 897b539baab2ba64b94dbd80408d8d29, type: 2}
+  - {fileID: 2100000, guid: 229deda2aaf5e2a4ea4cb8383ee243e7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -406,8 +406,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0666bb10914583439834a5229d6e607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rewardMoney: 0
+  refundMoney: 2
   explosionObject: {fileID: 2413880293620706860, guid: cbf77479e9173fa43a9e0a223c9874d2, type: 3}
   health: 50
+  isBase: 0
 --- !u!114 &8382936380867407848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,9 +437,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c32b8e9e75cf18c42a3b712e197294f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flightSpeed: 15
+  flightSpeed: 10
   turningSpeed: 250
-  flightHeight: 26
+  flightHeight: 30
 --- !u!114 &2957383074770455697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,7 +453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: {fileID: 6235462897488967184}
-  speed: 15
+  speed: 30
   damage: 250
 --- !u!135 &69281995757578994
 SphereCollider:
@@ -534,7 +537,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 4825686317377234437, guid: f8d9f8291641d764b90ba790d216c8ae, type: 3}
+  - {fileID: 2100000, guid: 766b7e0b3722cc14c8a768f3c91441d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

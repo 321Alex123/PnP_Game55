@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class KamikazeCar : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class KamikazeCar : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("PlayerBaze"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             Explode(collision.gameObject);
         }

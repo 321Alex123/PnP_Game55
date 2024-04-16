@@ -135,7 +135,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 4000
+  m_Radius: 3000
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6267201919102021185
 GameObject:
@@ -198,8 +198,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3184775727316513747, guid: fab23f7399204264e93f7c619236ee25, type: 3}
-  - {fileID: 1399217181045725049, guid: fab23f7399204264e93f7c619236ee25, type: 3}
+  - {fileID: 2100000, guid: 8fcc49d2f42d46c4da5f8bf49fa9fac2, type: 2}
+  - {fileID: 2100000, guid: d5a94a69ef83b3d47b3725d344fc0735, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -253,7 +253,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1137204435875667619}
@@ -287,13 +287,13 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3184775727316513747, guid: fab23f7399204264e93f7c619236ee25, type: 3}
-  - {fileID: 8834853354162034182, guid: fab23f7399204264e93f7c619236ee25, type: 3}
-  - {fileID: -5387331634511965467, guid: fab23f7399204264e93f7c619236ee25, type: 3}
-  - {fileID: 1399217181045725049, guid: fab23f7399204264e93f7c619236ee25, type: 3}
-  - {fileID: 4696019913486501361, guid: fab23f7399204264e93f7c619236ee25, type: 3}
-  - {fileID: 6470628660411565095, guid: fab23f7399204264e93f7c619236ee25, type: 3}
-  - {fileID: -7138092269131073482, guid: fab23f7399204264e93f7c619236ee25, type: 3}
+  - {fileID: 2100000, guid: 93d314cdc57664345bcadd10015d56c7, type: 2}
+  - {fileID: 2100000, guid: d38830f155020ae42aeb334bc268a444, type: 2}
+  - {fileID: 2100000, guid: 5a58733bceea8df48a4f169fdec9584a, type: 2}
+  - {fileID: 2100000, guid: d5a94a69ef83b3d47b3725d344fc0735, type: 2}
+  - {fileID: 2100000, guid: 8fcc49d2f42d46c4da5f8bf49fa9fac2, type: 2}
+  - {fileID: 2100000, guid: 8757df82d1c6ab74ea6ad1abe2a84b24, type: 2}
+  - {fileID: 2100000, guid: 93d314cdc57664345bcadd10015d56c7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -327,8 +327,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0666bb10914583439834a5229d6e607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rewardMoney: 1
+  refundMoney: 0
   explosionObject: {fileID: 2413880293620706860, guid: cbf77479e9173fa43a9e0a223c9874d2, type: 3}
   health: 1000
+  isBase: 0
 --- !u!114 &5340548594347088926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,8 +345,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  drivingSpeed: 10
-  turningSpeed: 100
+  drivingSpeed: 5
+  turningSpeed: 200
 --- !u!65 &4956964734499462346
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -390,5 +393,5 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 112
   m_CollisionDetection: 0

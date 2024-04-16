@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -7,6 +5,12 @@ using UnityEngine.UI;
 
 public class DroneProduction : MonoBehaviour
 {
+    [SerializeField] private Recources playerBaseWallet;
+
+    public int kamikadzePrice = 2;
+    public int APPrice = 5;
+    public int EMPPrice = 7;
+
     [SerializeField] private Transform droneSpawn;
     [SerializeField] private Transform droneGathering;
 
@@ -43,15 +47,46 @@ public class DroneProduction : MonoBehaviour
 
     public void ProduceDrone(GameObject dronePrefab)
     {
-        GameObject drone = Instantiate(dronePrefab, droneSpawn.position, droneSpawn.rotation);
-        CreateDroneButton(drone);
-        drone.GetComponent<Moving>().MoveToPosition(droneGathering.position);
+        int dronePrice = GetDronePrice(dronePrefab);
+
+        if (playerBaseWallet.HasEnoughScrap(dronePrice))
+        {
+            GameObject drone = Instantiate(dronePrefab, droneSpawn.position, droneSpawn.rotation);
+            CreateDroneButton(drone);
+            drone.GetComponent<Moving>().MoveToPosition(droneGathering.position);
+
+            playerBaseWallet.SpendScrap(dronePrice);
+        }
+        else
+        {
+
+        }
+    }
+
+    private int GetDronePrice(GameObject dronePrefab)
+    {
+        if (dronePrefab == kamikazeDronePrefab)
+        {
+            return kamikadzePrice;
+        }
+
+        if (dronePrefab == APDronePrefab)
+        {
+            return APPrice;
+        }
+
+        if (dronePrefab == EMPDronePrefab)
+        {
+            return EMPPrice;
+        }
+
+        return 0;
     }
 
     private void CreateDroneButton(GameObject drone)
     {
         Button droneButton = Instantiate(droneButtonPrefab, selectionContent.transform);
-        droneButton.GetComponentInChildren<TextMeshProUGUI>().text = drone.name; 
+        droneButton.GetComponentInChildren<TextMeshProUGUI>().text = drone.name;
         droneButton.onClick.AddListener(() => { SelectByClick.SelectDrone(drone); });
         drone.GetComponent<SelectionIndication>().selectionButton = droneButton.GetComponent<SelectionButton>();
     }

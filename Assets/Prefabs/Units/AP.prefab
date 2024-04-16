@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireColldown: 0.1
-  fireDistance: 40
+  fireDistance: 30
   projectile: {fileID: 704242626412601996, guid: 1669aba0a62bdf946aaef2b351f26552, type: 3}
   target: {fileID: 0}
   projectileSpawn: {fileID: 1357625958179594365}
@@ -167,8 +167,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 4825686317377234437, guid: 3ef1f66fd5e1ca243b912ec786dd5c1a, type: 3}
-  - {fileID: 3184775727316513747, guid: 3ef1f66fd5e1ca243b912ec786dd5c1a, type: 3}
+  - {fileID: 2100000, guid: 766b7e0b3722cc14c8a768f3c91441d0, type: 2}
+  - {fileID: 2100000, guid: 8fcc49d2f42d46c4da5f8bf49fa9fac2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -282,8 +282,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3184775727316513747, guid: 3ef1f66fd5e1ca243b912ec786dd5c1a, type: 3}
-  - {fileID: 1399217181045725049, guid: 3ef1f66fd5e1ca243b912ec786dd5c1a, type: 3}
+  - {fileID: 2100000, guid: 8fcc49d2f42d46c4da5f8bf49fa9fac2, type: 2}
+  - {fileID: 2100000, guid: d5a94a69ef83b3d47b3725d344fc0735, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -449,8 +449,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3184775727316513747, guid: 3ef1f66fd5e1ca243b912ec786dd5c1a, type: 3}
-  - {fileID: 4825686317377234437, guid: 3ef1f66fd5e1ca243b912ec786dd5c1a, type: 3}
+  - {fileID: 2100000, guid: 8fcc49d2f42d46c4da5f8bf49fa9fac2, type: 2}
+  - {fileID: 2100000, guid: 766b7e0b3722cc14c8a768f3c91441d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -488,7 +488,7 @@ GameObject:
   - component: {fileID: 5717020991520257661}
   - component: {fileID: 2724341861397297209}
   - component: {fileID: 4154038191775615205}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,7 +504,7 @@ Transform:
   m_GameObject: {fileID: 8601121263592558990}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000000076293944, y: 0.14407161, z: -0.12206421}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -542,8 +542,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3286032870682388923, guid: 3ef1f66fd5e1ca243b912ec786dd5c1a, type: 3}
-  - {fileID: 5428450082913979454, guid: 3ef1f66fd5e1ca243b912ec786dd5c1a, type: 3}
+  - {fileID: 2100000, guid: 540d76b2c122cf9448528373128a9daf, type: 2}
+  - {fileID: 2100000, guid: 229deda2aaf5e2a4ea4cb8383ee243e7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -604,8 +604,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0666bb10914583439834a5229d6e607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rewardMoney: 0
+  refundMoney: 5
   explosionObject: {fileID: 2413880293620706860, guid: cbf77479e9173fa43a9e0a223c9874d2, type: 3}
   health: 500
+  isBase: 0
 --- !u!114 &5717020991520257661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -634,7 +637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flightSpeed: 10
   turningSpeed: 250
-  flightHeight: 26
+  flightHeight: 30
 --- !u!135 &4154038191775615205
 SphereCollider:
   m_ObjectHideFlags: 0

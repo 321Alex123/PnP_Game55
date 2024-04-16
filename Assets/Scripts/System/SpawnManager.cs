@@ -10,13 +10,13 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] enemyList;
     public float spawnRadius;
 
-    private GameManager gameManager;
+    private GameSequence gameManager;
     private float spawnRate;
     private int enemiesSpawnCount = 1;
 
     private void Start()
     {
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameSequence>();
     }
 
     private void FixedUpdate()
