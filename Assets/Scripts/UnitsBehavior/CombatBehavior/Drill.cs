@@ -12,7 +12,7 @@ public class Drill : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             target = collision.gameObject;
             StartCoroutine(DealDamage());
