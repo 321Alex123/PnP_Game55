@@ -270,6 +270,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1156966141670970742}
+  playerBaze:
+    serializedVersion: 2
+    m_Bits: 128
   damage: 50
   damagePeriod: 1
 --- !u!114 &-1871161163535095764
@@ -284,6 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0666bb10914583439834a5229d6e607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeShield: 0
   rewardMoney: 0
   refundMoney: 5
   explosionObject: {fileID: 1356167441582277565, guid: c100dff8b3b913d42bae9ac975b6e7a9, type: 3}

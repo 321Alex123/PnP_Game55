@@ -181,7 +181,6 @@ MonoBehaviour:
   shield:
     serializedVersion: 2
     m_Bits: 0
-  explosion: {fileID: 0}
+  explosion: {fileID: 2541987113379601337, guid: db6bd95d19d527c4199bdfa6835286af, type: 3}
   speed: 50
-  damage: 200
   target: {fileID: 0}

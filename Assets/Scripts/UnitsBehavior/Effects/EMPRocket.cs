@@ -7,14 +7,13 @@ public class EMPRocket : MonoBehaviour
     [SerializeField] private LayerMask shield;
     [SerializeField] private GameObject explosion;
     [SerializeField] float speed = 50;
-    [SerializeField] int damage = 200;
     public GameObject target;
 
     private void Update()
     {
         if (target != null)
         {
-            transform.position += Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
         }
         else
         {

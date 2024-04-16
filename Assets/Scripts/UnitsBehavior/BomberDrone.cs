@@ -18,11 +18,16 @@ public class BomberDrone : MonoBehaviour
     private bool readyToBomb = true;
     private List<GameObject> potentialTarget = new List<GameObject>();
 
+    private EMPRocket empRocket;
     private Rocket rocket;
 
     private void Awake()
     {
-        if (shellPrefab.GetComponent<Rocket>() != null)
+        if (shellPrefab.GetComponent<EMPRocket>() != null)
+        {
+            empRocket = shellPrefab.GetComponent<EMPRocket>();
+        }
+        if (shellPrefab.GetComponent<EMPRocket>() != null)
         {
             rocket = shellPrefab.GetComponent<Rocket>();
         }
@@ -59,11 +64,11 @@ public class BomberDrone : MonoBehaviour
             {
                 GameObject shell = Instantiate(shellPrefab, bombSpawnPoint.transform.position, bombSpawnPoint.transform.rotation);
 
-                if (rocket != null)
+                if (empRocket != null)
                 {
                     if (potentialTarget.Count > 0) 
                     {
-                        rocket.target = potentialTarget[0];
+                        empRocket.target = potentialTarget[0];
                     }
                 }
                 
