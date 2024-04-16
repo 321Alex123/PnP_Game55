@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/Scenes/TestScene.unity.meta
 guid: 882ac15f9f7809b42a1108383998f4b8
 DefaultImporter:
+========
+guid: 540d76b2c122cf9448528373128a9daf
+NativeFormatImporter:
+>>>>>>>> Stashed changes:Assets/Materials/AP Drone Body.mat.meta
   externalObjects: {}
+  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
