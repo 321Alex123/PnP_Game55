@@ -22,7 +22,7 @@ public class Recources : MonoBehaviour
     public void AddScrapPassively()
     {
         Scrap += 1;
-        ScrapText.text = $"Scrap: {Scrap}";
+        ScrapText.text = $" {Scrap}";
     }
 
     //Методы для работы покупок дронов
