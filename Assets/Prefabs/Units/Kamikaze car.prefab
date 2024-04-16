@@ -126,6 +126,9 @@ MonoBehaviour:
   waypoints: []
   drivingSpeed: 10
   turningSpeed: 200
+  isDrill: 0
+  isAPC: 0
+  isKamikaze: 1
 --- !u!114 &8888595086106763441
 MonoBehaviour:
   m_ObjectHideFlags: 0

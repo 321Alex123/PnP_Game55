@@ -293,6 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0666bb10914583439834a5229d6e607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeShield: 0
   rewardMoney: 0
   refundMoney: 5
   explosionObject: {fileID: 1356167441582277565, guid: c100dff8b3b913d42bae9ac975b6e7a9, type: 3}
@@ -340,7 +341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bombSpawnPoint: {fileID: 1245676796254127318}
-  shellPrefab: {fileID: 1161923558529616179, guid: 843357d6501c8e44da404bb0640cf0b9, type: 3}
+  shellPrefab: {fileID: 5665960811183538697, guid: 3dd6a874ab3bd014ca8b26e9a74f3873, type: 3}
   dropBomb: {fileID: 719823455864393685, guid: 4408cce71d98df5469ccac734c0e6fd2, type: 3}
   ammo: 3
   bombCooldown: 5

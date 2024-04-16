@@ -127,12 +127,12 @@ GameObject:
   - component: {fileID: 5753173782735369502}
   - component: {fileID: 2550103631499906659}
   - component: {fileID: 1393719495424805838}
-  - component: {fileID: 4160219097629617445}
   - component: {fileID: -6595371894703280544}
   - component: {fileID: 2858139399889669255}
   - component: {fileID: -1871161163535095764}
   - component: {fileID: 5891618905109234708}
   - component: {fileID: 1156966141670970742}
+  - component: {fileID: 2421887323169779466}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Enemy
@@ -225,29 +225,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  drivingSpeed: 5
+  drivingSpeed: 20
   turningSpeed: 200
---- !u!65 &4160219097629617445
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2695784404864859720}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 248.15028, y: 193.57103, z: 500.28543}
-  m_Center: {x: 0, y: 0, z: 0}
+  isDrill: 1
+  isAPC: 0
+  isKamikaze: 0
 --- !u!54 &-6595371894703280544
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -499,6 +481,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!136 &2421887323169779466
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2695784404864859720}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 100
+  m_Height: 700
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 5.0578156}
 --- !u!1 &2752747152928739636
 GameObject:
   m_ObjectHideFlags: 0

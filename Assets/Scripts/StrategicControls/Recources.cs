@@ -8,7 +8,7 @@ using UnityEngine.Serialization;
 
 public class Recources : MonoBehaviour
 {
-    public int Scrap = 0;
+    public int Scrap = 10;
 
     public TextMeshProUGUI ScrapText;
     public float passiveIncomeTime = 3;
@@ -16,6 +16,7 @@ public class Recources : MonoBehaviour
     //Пассивный Заработок
     private void Start()
     {
+        ScrapText.text = Scrap.ToString();
         InvokeRepeating(nameof(AddScrapPassively), 1, passiveIncomeTime);
     }
 

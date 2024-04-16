@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    public bool activeShield = false;
     [SerializeField] private int rewardMoney;
     [SerializeField] private int refundMoney;
 
@@ -27,10 +28,17 @@ public class Health : MonoBehaviour
 
     public void RecieveDamage(int damage)
     {
-        health -= damage;
-        if (health <= 0)
+        if (isBase)
         {
-            Death();
+            GetComponent<Base>().DisplayDamage(health);
+        }
+        if (!activeShield)
+        {
+            health -= damage;
+            if (health <= 0)
+            {
+                Death();
+            }
         }
     }
 
